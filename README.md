@@ -1,55 +1,56 @@
-# Hash Function, Salt and Pepper
+# 🔐 Security Learning
 
-## 1. Overview
+A personal repository for learning information security through technical research, Python experiments, and documentation.
 
-This project documents my learning about password security, hash functions, salt, and pepper.
+情報セキュリティに関する知識を学び、Pythonでの実験や検証を通じて理解を深めるための学習リポジトリです。
 
-## 2. Hash Function
+## 🎯 Objectives
 
-A hash function converts input data into a fixed-length hash value.
+- Understand fundamental information security concepts.
+- Explore cryptographic mechanisms and authentication.
+- Practice security-related implementations using Python.
+- Document findings and technical insights.
 
-### Key characteristics
-- One-way function
-- Fixed-length output
-- Same input produces the same output
+## 📚 Learning Topics
 
-### Hashing vs Encryption
-- Hashing: Designed to be one-way.
-- Encryption: Can be reversed using a decryption key.
+| No. | Topic | Contents | Status |
+|---|---|---|---|
+| 01 | Hash Function, Salt and Pepper | Password hashing and secure password storage | In Progress |
+| 02 | Encryption | Symmetric and asymmetric encryption | Planned |
+| 03 | Authentication | Authentication mechanisms and MFA | Planned |
+| 04 | Network Security | DNS, TLS, HTTPS and network protection | Planned |
 
-## 3. Salt
+## 🛠️ Technologies
 
-Salt is random data added to a password before hashing.
+- Python
+- Git / GitHub
+- Markdown
 
-### Purpose
-- Generate different hash values for identical passwords.
-- Prevent attackers from efficiently using precomputed hash tables.
+## 📂 Repository Structure
 
-Salt does not need to be secret and is generally stored alongside the password hash.
+```text
+security-learning/
+│
+├── README.md
+│
+└── 01-hash-salt-pepper/
+    ├── README.md
+    ├── hash_demo.py
+    └── password_demo.py
+```
 
-## 4. Pepper
+## 📝 Learning Approach
 
-Pepper is a secret value added to the password hashing process.
+Each topic is explored through the following process:
 
-### Purpose
-- Add another layer of protection.
-- Make password attacks more difficult if the password database is compromised.
+1. Research fundamental concepts.
+2. Understand the underlying mechanisms.
+3. Implement small experiments using Python.
+4. Analyze experimental results.
+5. Document findings and lessons learned.
 
-Pepper must be stored separately from the password database.
+## 📌 Notes
 
-## 5. Practical Experiments
+This repository is intended for educational purposes.
 
-- [ ] Calculate a SHA-256 hash using Python.
-- [ ] Compare hash values with and without salt.
-- [ ] Implement password hashing using Argon2id.
-- [ ] Understand password verification.
-
-## 6. Key Takeaways
-
-To be completed through practical experiments.
-
-## 7. References
-
-- OWASP Password Storage Cheat Sheet
-- Python hashlib documentation
-- Python argon2-cffi documentation
+Practical implementations are developed in a controlled learning environment and are not necessarily intended for production use.
